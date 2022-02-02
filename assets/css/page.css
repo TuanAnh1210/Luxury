@@ -7,7 +7,9 @@
     overflow: hidden;
     position: relative;
 }
-.message {
+.message, 
+.message:link,
+.message:visited {
     position: fixed;
     right: 0;
     color: white;
@@ -22,10 +24,20 @@
     border-radius: 50px;
     display: flex;
     margin-right: 12px;
+   
 }
 
+
 .message:hover {
-    opacity: 0.8;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+
+.message:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     cursor: pointer;
 }
 
@@ -104,7 +116,7 @@ html {
     cursor: pointer;
 }
 .header__language:hover .header__language-nav {
-    display: block;
+    transform: translateY(0);
 }
 .header__language-nav {
     background-color: #3fd0d4;
@@ -113,9 +125,10 @@ html {
     width: 100%;
     left: 0;
     text-align: center;
-    animation: fadeIn ease-in-out 0.4s;
-    display: none;
-    box-shadow: 0 1px 4px #ccc
+    /* animation: fadeIn ease-in-out 0.4s; */
+    transform: translateY(-140%);
+    box-shadow: 0 1px 4px #ccc;
+    transition: all .3s linear;
 }
 
 .header__language-list {
@@ -180,11 +193,14 @@ html {
     min-width: 200px;
     text-align: justify;
     display: none;
-    animation: fadeIn linear 0.3s;
+    animation: fadeIn linear 0.4s;
+    
+    
 }
 
 .header__navbar-list:hover .sub-header-list {
     display: block;
+   
 }
 .sub-header-items {
     list-style: none;
@@ -668,6 +684,14 @@ html {
 }
 .tour__content {
     position: relative;
+}
+.content-wrapper{
+    overflow: hidden;
+
+}
+.tour__content:hover img{
+    transform: scaleX(1.1) ;
+    opacity: .8;
 }
 .tour__price5,
 .tour__price {
