@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon"
-        href="https://khonggianxanhpq.jweb.vn/uploads/khonggianxanhpq/images/favicon-waao.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../assets/lib/aos.css">
     <link rel="stylesheet" href="./assetsdetail/lib/owl/owl.carousel.min.css">
@@ -24,6 +23,11 @@
 
 <body>
     <div class="main">
+        <div class="goToTop">
+            <span>Top</span>
+            <span class="ti-angle-double-up"></span>
+
+        </div>
         <!-- Header -->
         <header class="m-0 c-0">
             <div class="header__container">
@@ -780,43 +784,7 @@
 
         </footer>
 
-        <!-- <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="footer__one">
-                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-footer.png"
-                                alt="">
 
-                            <p>Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae</p>
-
-                            <ul>
-                                <li>
-                                    <a href="../index.html">
-                                        <i class="ti-email"></i>
-                                        <p>tuananh@gmail.com</p>
-                                    </a>
-                                    <a href="../index.html">
-                                        <i class="ti-mobile"></i>
-                                        <p>0386520536</p>
-                                    </a>
-                                    <a href="../index.html">
-                                        <i class="ti-location-pin"></i>
-                                        <p>Ha Noi, Viet Nam</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="footer__two">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
 
 
 
@@ -909,6 +877,28 @@
 
     <!-- <script src="./assetsdetail/lib/bootstrap/bootstrap.bundle.min.js.map"></script> -->
     <script src="./assetsdetail/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+        const goToTop = document.querySelector('.goToTop')
+
+
+        const handleScrooll = () => {
+            if (window.scrollY >= 800) {
+                goToTop.style.display = "flex"
+            }
+            else {
+                goToTop.style.display = "none"
+
+            }
+        }
+
+        goToTop.onclick = () => {
+            window.location.href = '#'
+        }
+
+
+
+        window.addEventListener('scroll', handleScrooll)
+    </script>
     <script src="./assetsdetail/js/detail.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({

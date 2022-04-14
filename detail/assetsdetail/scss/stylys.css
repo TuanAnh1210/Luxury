@@ -10,6 +10,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -124,6 +125,32 @@ header .header__container .header__navbar-icon i:hover {
 
 header .header__container .header__navbar-icon i:first-child {
   margin-left: 40px;
+}
+
+.goToTop {
+  position: fixed;
+  right: 2%;
+  top: 80%;
+  background-color: #23a9af;
+  color: #f0ede8;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  z-index: 100;
+  -webkit-transition: all 12s ease;
+  transition: all 12s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  -webkit-animation: goToTop .2s ease;
+          animation: goToTop .2s ease;
 }
 
 .content__price {

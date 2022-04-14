@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TA-Luxury</title>
-    <link rel="icon" type="image/x-icon"
-        href="https://khonggianxanhpq.jweb.vn/uploads/khonggianxanhpq/images/favicon-waao.png">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.webp">
 
     <link rel="stylesheet" href="./assets/css/page.css">
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
@@ -28,6 +27,11 @@
             <span class="message__text">Trò chuyện</span>
         </div>
 
+        <div class="goToTop">
+            <span>Top</span>
+            <span class="ti-angle-double-up"></span>
+
+        </div>
         <div class="header">
             <div class="header__infor">
                 <a href="./detail/detail.html" class="header__infor-link">
@@ -418,8 +422,7 @@
                         <div class="row">
                             <div class="col l-8 m-8 slider-img">
                                 <img data-aos="zoom-out" data-aos-duration="2000" class="slider-img1"
-                                    src="https://setsail.select-themes.com/wp-content/uploads/2018/09/travel-slide-1.jpg"
-                                    alt="">
+                                    src="./assets/img/slider1.jpg" alt="">
                                 <img data-aos="zoom-out" data-aos-duration="2000" class="slider-subText"
                                     src="https://setsail.select-themes.com/wp-content/uploads/2018/09/travel-slide-img-1.png"
                                     alt="">
@@ -832,8 +835,8 @@
     <div class="modal">
         <div class="modal__overlay"></div>
         <div class="modal__body">
-            <!-- registration -->
-            <form class="auth-form auth-form2">
+            <!-- login -->
+            <div class="auth-form auth-form2">
                 <div class="auth-form-heading">
                     <span class="auth-form--login">LOGIN</span>
                     <span class="auth-form--register active">REGISTER</span>
@@ -846,11 +849,11 @@
                         <p class="p-text">Log into your account in just a few simple steps.</p>
                         <div class="auth-form--input">
                             <i class="ti-user"></i>
-                            <input type="text" required class="input--text" placeholder="User Name">
+                            <input type="text" required class="input--text" id="userName" placeholder="User Name">
                         </div>
                         <div class="auth-form--input">
                             <i class="ti-lock"></i>
-                            <input type="password" required class="input--text" placeholder="Password">
+                            <input type="password" required class="input--text" id="passWord" placeholder="Password">
                         </div>
                         <div class="auth-form-pass">
                             <a href="" class="auth-form-past--text">Lost Your password?</a>
@@ -873,9 +876,9 @@
                 </div>
 
 
-            </form>
+            </div>
 
-            <!-- login -->
+            <!-- resister -->
             <form class="auth-form auth-form1">
                 <div class="auth-form-heading">
                     <span class="auth-form--login active js-login">LOGIN</span>
